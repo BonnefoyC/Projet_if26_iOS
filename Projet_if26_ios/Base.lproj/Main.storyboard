@@ -311,10 +311,10 @@
             </objects>
             <point key="canvasLocation" x="2028.75" y="521.83098591549299"/>
         </scene>
-        <!--View Controller-->
+        <!--Compte View Controller-->
         <scene sceneID="4pe-U6-WXQ">
             <objects>
-                <viewController id="P4a-cb-lno" sceneMemberID="viewController">
+                <viewController id="P4a-cb-lno" customClass="CompteViewController" customModule="Projet_if26_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tYj-Dy-bxr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -327,28 +327,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom : Marc LEMERCIER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-9l-cqa">
-                                <rect key="frame" x="63" y="125" width="183" height="21"/>
+                                <rect key="frame" x="45" y="121" width="233" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email : marc.lemercie@utt.fr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exE-rl-bqt">
-                                <rect key="frame" x="63" y="170" width="215" height="21"/>
+                                <rect key="frame" x="45" y="150" width="233" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tel : 0425356595" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdD-dE-1fl">
-                                <rect key="frame" x="63" y="222" width="138" height="21"/>
+                                <rect key="frame" x="45" y="179" width="215" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5F-h0-PSB">
-                                <rect key="frame" x="92" y="269" width="136" height="30"/>
+                                <rect key="frame" x="92" y="208" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Changer de compte"/>
                                 <connections>
@@ -359,6 +359,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Jwb-Pr-bfi"/>
                     </view>
+                    <connections>
+                        <outlet property="email_compte" destination="exE-rl-bqt" id="N7U-rr-H1t"/>
+                        <outlet property="nom_compte" destination="a9n-9l-cqa" id="KmH-dk-fSH"/>
+                        <outlet property="tel_compte" destination="hdD-dE-1fl" id="wap-Pg-tip"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOf-f2-gaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
