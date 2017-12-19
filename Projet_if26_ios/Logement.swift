@@ -46,5 +46,7 @@ public class Logement : NSObject, MKAnnotation {
     func affiche () -> String {
         return "\(self.label)(\(self.prix), \(self.nb_pieces), \(self.lat), \(self.lng), \(self.logement_description))"
     }
+    
+    
 }
 

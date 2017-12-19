@@ -61,7 +61,7 @@ public class ModulePersistance {
             try self.database.run(createTableProprio)
             
             print("Create Table Proprietaire OK")
-            
+                       
         } catch {
             print(error)
         }
