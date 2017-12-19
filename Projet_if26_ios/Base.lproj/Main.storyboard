@@ -84,11 +84,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="bottomRight" contentHorizontalAlignment="trailing" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TxE-Sh-5EL">
-                            <rect key="frame" x="0.0" y="72" width="320" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Recherche"/>
-                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celluleModule" textLabel="U4i-8d-C6R" detailTextLabel="71I-tt-0OG" style="IBUITableViewCellStyleSubtitle" id="otJ-9T-pm9">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
@@ -277,6 +272,7 @@
                         <viewLayoutGuide key="safeArea" id="opw-dk-Lpb"/>
                     </view>
                     <connections>
+                        <outlet property="bt_message" destination="FEq-WI-CjW" id="GW3-Bv-qnU"/>
                         <outlet property="et_mail" destination="4bp-fP-Cz6" id="6V1-Ea-xA9"/>
                         <outlet property="et_message" destination="pGE-As-eaa" id="sbq-tp-o0D"/>
                         <outlet property="et_nom" destination="rUM-vb-Uam" id="Qto-y9-rRb"/>
