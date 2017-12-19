@@ -33,24 +33,43 @@ class ModifierCompteViewController: UIViewController {
     
     @IBAction func modifierVotreCompte(_ sender: UIButton) {
         
-        //Vérification
+        if (verification()) {
         
-        let nom_bis : String = et_nom.text ?? ""
-        let email_bis : String = et_email.text ?? ""
-        let tel_bis : String = et_tel.text ?? ""
-        
-        Compte.modifierCompte(nom : nom_bis, email : email_bis, tel : tel_bis)
-        
+            
+            let nom_bis : String = et_nom.text ?? ""
+            let email_bis : String = et_email.text ?? ""
+            let tel_bis : String = et_tel.text ?? ""
+            
+            Compte.modifierCompte(nom : nom_bis, email : email_bis, tel : tel_bis)
+            
+        } else {
+            
+        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func verification() -> Bool {
+        var check : Bool = true
+        
+        if(et_nom.text == "") {
+            check = false
+            et_nom.backgroundColor = UIColor.red
+        } else {
+            et_nom.backgroundColor = UIColor.white
+        }
+        if(et_email.text == "") {
+            check = false
+            et_email.backgroundColor = UIColor.red
+        }else {
+            et_email.backgroundColor = UIColor.white
+        }
+        if(et_tel.text == "") {
+            check = false
+            et_tel.backgroundColor = UIColor.red
+        }else {
+            et_tel.backgroundColor = UIColor.white
+        }
+        
+        return check
     }
-    */
 
 }

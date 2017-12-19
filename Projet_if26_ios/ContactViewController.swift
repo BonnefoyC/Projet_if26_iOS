@@ -61,6 +61,18 @@ class ContactViewController: UIViewController {
             et_mail.isEnabled = false
             et_message.isEditable = false
             bt_message.isEnabled = false
+        } else {
+            
+            let message = "Tous les champs sont obligatoires."
+            let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            self.present(alert, animated: true)
+            
+            // duration in seconds
+            let duration: Double = 5
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
+                alert.dismiss(animated: true)
+            }
         }
         
     }
