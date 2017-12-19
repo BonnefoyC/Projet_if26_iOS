@@ -9,6 +9,8 @@
 import Foundation
 import SQLite
 
+
+
 public class ModulePersistance {
     var database : Connection!
     let logementsTable = Table("logements")

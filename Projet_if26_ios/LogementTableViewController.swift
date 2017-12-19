@@ -7,8 +7,6 @@
 ///Users/if26-grp2/Desktop/Projet_if26_ios 2/Projet_if26_ios/Base.lproj/Main.storyboard
 
 import UIKit
-import SQLite
-
 
 class LogementTableViewController: UITableViewController {
 
