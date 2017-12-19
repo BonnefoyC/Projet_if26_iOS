@@ -17,9 +17,7 @@ public class Compte {
         
         let mp : ModulePersistance = ModulePersistance()
         
-        
-        
-        
+        mp.updateProprietaire(proprietaire: Compte.current)
     }
     
 }

@@ -109,7 +109,6 @@ public class ModulePersistance {
     
     func getProprietaire(id_proprio : String) -> Proprietaire{
         
-       
         var proprietaire : Proprietaire! = nil
         
         do {
@@ -125,5 +124,16 @@ public class ModulePersistance {
             print(error)
         }
         return proprietaire
+    }
+    
+    func updateProprietaire(proprietaire : Proprietaire) {
+        
+        let current_proprio = self.proprioTable.filter(self.id == proprietaire.id_proprio)
+        
+        do {
+            try self.database.run(current_proprio.update(nom <- nom.replace("", with: proprietaire.nom), email <- email.replace("", with: proprietaire.email), tel <- tel.replace("", with: proprietaire.nom)))
+        } catch {
+            print(error)
+        }
     }
 }
