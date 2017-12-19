@@ -16,7 +16,7 @@ public class Compte {
         return Compte.current
     }
     
-    func modifierCompte(nom  : String, email : String, tel : String) {
+    public static func modifierCompte(nom  : String, email : String, tel : String) {
         Compte.current = Proprietaire(id_proprio: Compte.current.id_proprio, nom: nom, email: email, tel: tel)
         
         let mp : ModulePersistance = ModulePersistance()

@@ -369,10 +369,10 @@
             </objects>
             <point key="canvasLocation" x="-110.625" y="1529.5774647887324"/>
         </scene>
-        <!--View Controller-->
+        <!--Modifier Compte View Controller-->
         <scene sceneID="1jL-bd-wM1">
             <objects>
-                <viewController id="2pq-bF-V8N" sceneMemberID="viewController">
+                <viewController id="2pq-bF-V8N" customClass="ModifierCompteViewController" customModule="Projet_if26_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N1R-5o-0Cc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,11 +423,19 @@
                                 <rect key="frame" x="84" y="278" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Modifier votre compte"/>
+                                <connections>
+                                    <action selector="modifierVotreCompte:" destination="2pq-bF-V8N" eventType="touchUpInside" id="dF8-Zo-hN9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="lwj-Yg-NGA"/>
                     </view>
+                    <connections>
+                        <outlet property="et_email" destination="3Ff-7T-KOd" id="GpZ-cu-efG"/>
+                        <outlet property="et_nom" destination="Pgh-Wg-O2h" id="d80-bG-C26"/>
+                        <outlet property="et_tel" destination="pqD-23-NBZ" id="oX8-K9-nqB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KK9-A8-1LP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

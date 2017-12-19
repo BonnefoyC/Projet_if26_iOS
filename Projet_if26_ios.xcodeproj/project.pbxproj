@@ -23,6 +23,7 @@
 		88B3D5811FE947D5006C0CBE /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88B3D5721FE947CA006C0CBE /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		88B3D5851FE94BEB006C0CBE /* Compte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B3D5841FE94BEB006C0CBE /* Compte.swift */; };
 		88B3D5871FE95298006C0CBE /* CompteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B3D5861FE95298006C0CBE /* CompteViewController.swift */; };
+		88B3D5891FE95596006C0CBE /* ModifierCompteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B3D5881FE95596006C0CBE /* ModifierCompteViewController.swift */; };
 		88D6043B1FE0151A0058FCB3 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6043A1FE0151A0058FCB3 /* DetailsViewController.swift */; };
 		88DB02481FDECC8C00BA4724 /* Proprietaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB02471FDECC8C00BA4724 /* Proprietaire.swift */; };
 		88DB025B1FDED66100BA4724 /* ModulePersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB025A1FDED66100BA4724 /* ModulePersistance.swift */; };
@@ -138,6 +139,7 @@
 		88B3D5671FE947C9006C0CBE /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		88B3D5841FE94BEB006C0CBE /* Compte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compte.swift; sourceTree = "<group>"; };
 		88B3D5861FE95298006C0CBE /* CompteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompteViewController.swift; sourceTree = "<group>"; };
+		88B3D5881FE95596006C0CBE /* ModifierCompteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierCompteViewController.swift; sourceTree = "<group>"; };
 		88D6043A1FE0151A0058FCB3 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		88DB02471FDECC8C00BA4724 /* Proprietaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proprietaire.swift; sourceTree = "<group>"; };
 		88DB025A1FDED66100BA4724 /* ModulePersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulePersistance.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				8867940C1FE3D49B00C7EA88 /* MapViewController.swift */,
 				88B3D5841FE94BEB006C0CBE /* Compte.swift */,
 				88B3D5861FE95298006C0CBE /* CompteViewController.swift */,
+				88B3D5881FE95596006C0CBE /* ModifierCompteViewController.swift */,
 			);
 			path = Projet_if26_ios;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				881D41FC1FDA8E2400B9ECF9 /* AppDelegate.swift in Sources */,
 				88D6043B1FE0151A0058FCB3 /* DetailsViewController.swift in Sources */,
 				8867940D1FE3D49B00C7EA88 /* MapViewController.swift in Sources */,
+				88B3D5891FE95596006C0CBE /* ModifierCompteViewController.swift in Sources */,
 				881D422C1FDA9DAF00B9ECF9 /* LogementTableViewController.swift in Sources */,
 				88DB02481FDECC8C00BA4724 /* Proprietaire.swift in Sources */,
 				88DB025B1FDED66100BA4724 /* ModulePersistance.swift in Sources */,
