@@ -19,6 +19,18 @@ class LogementTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let logements : [Logement] = Logement.getinitiallogement()
+        for logement in logements {
+            mp.insertLogement(l: logement)
+            //mp.insertProprietaire(P: proprietaire)
+        }
+        
+        let proprietaires : [Proprietaire] = Proprietaire.getinitialproprietaire()
+        for proprietaire in proprietaires {
+            mp.insertProprietaire(P: proprietaire)
+        }
+ 
+ 
         liste = mp.listLogement()
         for l in liste {
             print(l.affiche())
