@@ -44,7 +44,7 @@ public class Proprietaire {
         Proprietaire (id_proprio: "16", nom: "Aline Roux", email: "aline.roux@gmail.com", tel: "0787444111"),
         Proprietaire (id_proprio: "17", nom: "ODE Pakiry", email: "ode.pakiry@gmail.com", tel: "0787953333"),
         Proprietaire (id_proprio: "18", nom: "RONY Pakiry", email: "rony.pakiry@gmail.com", tel: "0787999945"),
-        Proprietaire (id_proprio: "18", nom: "CELINE ", email: "rony.pakiry@gmail.com", tel: "0787947520")
+        Proprietaire (id_proprio: "18", nom: "CELINE miron", email: "celine.miron@gmail.com", tel: "0787947520")
         ]
         return liste
     }
