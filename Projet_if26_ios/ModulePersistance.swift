@@ -29,6 +29,7 @@ public class ModulePersistance {
     let nom = Expression<String>("nom")
     let email = Expression<String>("email")
     let tel = Expression<String>("tel")
+    let pass = Expression<String>("password")
     
     init() {
         do {
@@ -57,6 +58,7 @@ public class ModulePersistance {
                 table.column(self.nom)
                 table.column(self.email)
                 table.column(self.tel)
+                table.column(self.pass)
             }
             try self.database.run(createTableProprio)
             
@@ -98,7 +100,7 @@ public class ModulePersistance {
     }
     func insertProprietaire (P: Proprietaire) {
         print("Insérer un proprietaire :")
-    let insertProprietaire = self.proprioTable.insert(self.id <- P.id_proprio, self.self.nom <- P.nom,  self.email <- P.email,  self.tel <- P.tel)
+    let insertProprietaire = self.proprioTable.insert(self.id <- P.id_proprio, self.self.nom <- P.nom,  self.email <- P.email,  self.tel <- P.tel, self.pass <- P.pass)
         do {
             try self.database.run(insertProprietaire)
             print("Proprietaire inserted")
@@ -116,7 +118,7 @@ public class ModulePersistance {
             let liste = try self.database.prepare(self.proprioTable)
             for p in liste {
                 if(p[self.id] == id_proprio) {
-                    proprietaire = Proprietaire(id_proprio: p[self.id], nom: p[self.nom], email: p[self.email], tel: p[self.tel])
+                    proprietaire = Proprietaire(id_proprio: p[self.id], nom: p[self.nom], email: p[self.email], tel: p[self.tel], pass : p[self.pass])
                 }
             }
             

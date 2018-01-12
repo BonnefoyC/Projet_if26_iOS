@@ -10,14 +10,14 @@ import Foundation
 
 public class Compte {
     
-    private static var current : Proprietaire = Proprietaire(id_proprio : "0", nom : "Clément BONNEFOY", email : "clement.bonnefoy@utt.fr", tel : "04253515958")
+    private static var current : Proprietaire = Proprietaire(id_proprio : "0", nom : "Clément BONNEFOY", email : "clement.bonnefoy@utt.fr", tel : "04253515958", pass : "")
     
     public static func getCompteCourant() -> Proprietaire {
         return Compte.current
     }
     
     public static func modifierCompte(nom  : String, email : String, tel : String) {
-        Compte.current = Proprietaire(id_proprio: Compte.current.id_proprio, nom: nom, email: email, tel: tel)
+        Compte.current = Proprietaire(id_proprio: Compte.current.id_proprio, nom: nom, email: email, tel: tel, pass : Compte.current.pass)
         
         let mp : ModulePersistance = ModulePersistance()
         
