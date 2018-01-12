@@ -17,7 +17,11 @@ class ModifierCompteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let proprietaire_courant : Proprietaire = Compte.getCompteCourant()
+        let id_proprio : String = Compte.getCompteCourant()
+        
+        let mp : ModulePersistance = ModulePersistance()
+        
+        let proprietaire_courant : Proprietaire = mp.getProprietaire(id_proprio: id_proprio)
         
         et_nom.text = proprietaire_courant.nom
         
@@ -40,7 +44,19 @@ class ModifierCompteViewController: UIViewController {
             let email_bis : String = et_email.text ?? ""
             let tel_bis : String = et_tel.text ?? ""
             
-            Compte.modifierCompte(nom : nom_bis, email : email_bis, tel : tel_bis)
+            let id_proprio : String = Compte.getCompteCourant()
+            
+            let mp : ModulePersistance = ModulePersistance()
+            
+            var proprietaire_courant : Proprietaire = mp.getProprietaire(id_proprio: id_proprio)
+            
+            proprietaire_courant.nom = nom_bis
+            
+            proprietaire_courant.email = email_bis
+            
+            proprietaire_courant.tel = tel_bis
+            
+            mp.updateProprietaire(proprietaire: proprietaire_courant)
             
         } else {
             

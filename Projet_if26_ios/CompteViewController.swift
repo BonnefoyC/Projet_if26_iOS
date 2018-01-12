@@ -17,7 +17,13 @@ class CompteViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let proprietaire_courant : Proprietaire = Compte.getCompteCourant()
+        let id_proprio : String = Compte.getCompteCourant()
+        
+        let mp : ModulePersistance = ModulePersistance()
+        
+        let proprietaire_courant : Proprietaire = mp.getProprietaire(id_proprio: id_proprio)
+        
+        print(proprietaire_courant.tel)
         
         nom_compte.text = "Nom : \(proprietaire_courant.nom)"
         email_compte.text = "Email : \(proprietaire_courant.email)"

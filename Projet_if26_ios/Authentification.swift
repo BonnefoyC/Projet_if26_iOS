@@ -21,7 +21,6 @@ class Authentification: UIViewController {
         let logements : [Logement] = Logement.getinitiallogement()
         for logement in logements {
             mp.insertLogement(l: logement)
-            //mp.insertProprietaire(P: proprietaire)
         }
         
         let proprietaires : [Proprietaire] = Proprietaire.getinitialproprietaire()
@@ -69,7 +68,7 @@ class Authentification: UIViewController {
                 check = false
                 print("mauvais mdp")
             } else {
-                Compte.setCompteCourant(p: mp.getProprietaire(id_proprio: id_proprio))
+                Compte.setCompteCourant(p: id_proprio)
                 print("bon mdp")
             }
         }

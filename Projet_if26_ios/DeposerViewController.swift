@@ -42,7 +42,7 @@ class DeposerViewController: UIViewController {
         
         let prix:String = (prix_annonce.text)!
         let nb_pieces: String = ( nb_pieces_annonce.text)!
-        let logement : Logement = Logement(label: (label_annonce.text)!, description: (description_annonce.text)!, prix:Int(prix)!, nb_pieces:Int(nb_pieces)!, ville: (ville_annonce.text)!, adresse: (adresse_annonce.text)!, lat: location.coordinate.latitude, lng: location.coordinate.longitude, id_proprio: Compte.getCompteCourant().id_proprio)
+        let logement : Logement = Logement(label: (label_annonce.text)!, description: (description_annonce.text)!, prix:Int(prix)!, nb_pieces:Int(nb_pieces)!, ville: (ville_annonce.text)!, adresse: (adresse_annonce.text)!, lat: location.coordinate.latitude, lng: location.coordinate.longitude, id_proprio: Compte.getCompteCourant())
         
         mp.insertLogement(l: logement)
     }

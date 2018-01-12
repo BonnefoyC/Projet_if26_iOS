@@ -136,11 +136,7 @@ public class ModulePersistance {
             
             let liste = try self.database.prepare(self.proprioTable)
             
-            print(liste)
-            
             for p in liste {
-                
-                print("\(p[self.email]) \(p[self.pass])")
                 
                 if(p[self.email] == email && p[self.pass] == pass) {
                     id_proprio = p[self.id]
@@ -157,9 +153,16 @@ public class ModulePersistance {
         
         let current_proprio = self.proprioTable.filter(self.id == proprietaire.id_proprio)
         
+        print(proprietaire.tel)
+        
         do {
-            try self.database.run(current_proprio.update(nom <- nom.replace("", with: proprietaire.nom), email <- email.replace("", with: proprietaire.email), tel <- tel.replace("", with: proprietaire.nom)))
+            /*
+            try self.database.run(current_proprio.update(nom <- nom.replace("", with: proprietaire.nom), email <- email.replace("", with: proprietaire.email), tel <- tel.replace("", with: proprietaire.nom), pass <- pass.replace("", with : proprietaire.pass)))
+            */
+            try self.database.run(current_proprio.update(nom <- proprietaire.nom, email <- proprietaire.email, tel <- proprietaire.tel, pass <- proprietaire.pass))
+            
         } catch {
+            print("error")
             print(error)
         }
     }

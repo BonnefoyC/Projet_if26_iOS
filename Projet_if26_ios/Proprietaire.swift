@@ -35,7 +35,7 @@ public class Proprietaire {
         Proprietaire (id_proprio: "5", nom: "Michel Laurant", email: "michel.laurant@gmail.com", tel: "078792222", pass: ""),
         Proprietaire (id_proprio: "6", nom: "Marie Girard", email: "marie.girard@gmail.com", tel: "078778945", pass: ""),
         Proprietaire (id_proprio: "7", nom: "Clement Bonnefoy", email: "clement.bonnefoy@utt.fr", tel: "0787742603", pass: "if2617"),
-        Proprietaire (id_proprio: "8", nom: "Wiem Jellad", email: "wiem.Jellad@utt.fr", tel: "0787159357", pass: ""),
+        Proprietaire (id_proprio: "8", nom: "Wiem Jellad", email: "wiem.jellad@utt.fr", tel: "0787159357", pass: ""),
         Proprietaire (id_proprio: "9", nom: "Michel Laurant", email: "michel.laurant@gmail.com", tel: "0787952222", pass: ""),
         Proprietaire (id_proprio: "10", nom: "Clement Lambert", email: "clement.lambert@gmail.com", tel: "0787954561", pass: ""),
         Proprietaire (id_proprio: "11", nom: "CHLOé Robert", email: "chloé.robert@gmail.com", tel: "0787952103", pass: ""),

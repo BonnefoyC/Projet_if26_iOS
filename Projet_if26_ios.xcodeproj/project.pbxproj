@@ -18,6 +18,7 @@
 		881D422C1FDA9DAF00B9ECF9 /* LogementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881D422B1FDA9DAF00B9ECF9 /* LogementTableViewController.swift */; };
 		8867940D1FE3D49B00C7EA88 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867940C1FE3D49B00C7EA88 /* MapViewController.swift */; };
 		8867941F1FE3E51F00C7EA88 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867941E1FE3E51F00C7EA88 /* ContactViewController.swift */; };
+		8893DD3E200904B20031C349 /* ModifierMotDePasseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8893DD3D200904B20031C349 /* ModifierMotDePasseController.swift */; };
 		88B3D57F1FE947D1006C0CBE /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B3D5721FE947CA006C0CBE /* SQLite.framework */; };
 		88B3D5801FE947D5006C0CBE /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B3D5721FE947CA006C0CBE /* SQLite.framework */; };
 		88B3D5811FE947D5006C0CBE /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88B3D5721FE947CA006C0CBE /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -137,6 +138,7 @@
 		8867940C1FE3D49B00C7EA88 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8867941B1FE3D73800C7EA88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8867941E1FE3E51F00C7EA88 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		8893DD3D200904B20031C349 /* ModifierMotDePasseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierMotDePasseController.swift; sourceTree = "<group>"; };
 		88B3D5671FE947C9006C0CBE /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		88B3D5841FE94BEB006C0CBE /* Compte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compte.swift; sourceTree = "<group>"; };
 		88B3D5861FE95298006C0CBE /* CompteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompteViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				88B3D5861FE95298006C0CBE /* CompteViewController.swift */,
 				88B3D5881FE95596006C0CBE /* ModifierCompteViewController.swift */,
 				88C28A9A2008B460005C1EEE /* Authentification.swift */,
+				8893DD3D200904B20031C349 /* ModifierMotDePasseController.swift */,
 			);
 			path = Projet_if26_ios;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				88D6043B1FE0151A0058FCB3 /* DetailsViewController.swift in Sources */,
 				88C28A9B2008B460005C1EEE /* Authentification.swift in Sources */,
 				8867940D1FE3D49B00C7EA88 /* MapViewController.swift in Sources */,
+				8893DD3E200904B20031C349 /* ModifierMotDePasseController.swift in Sources */,
 				88B3D5891FE95596006C0CBE /* ModifierCompteViewController.swift in Sources */,
 				881D422C1FDA9DAF00B9ECF9 /* LogementTableViewController.swift in Sources */,
 				88DB02481FDECC8C00BA4724 /* Proprietaire.swift in Sources */,
