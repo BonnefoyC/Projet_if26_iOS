@@ -70,13 +70,13 @@ public class ModulePersistance {
     }
     
     func insertLogement(l : Logement) {
-        print("Insérer un logement :")
+        //print("Insérer un logement :")
         
         let insertLogement = self.logementsTable.insert(self.label <- l.label, self.def_description <- l.logement_description, self.nb_pieces <- l.nb_pieces, self.prix <- l.prix, self.ville <- l.ville, self.adresse <- l.adresse, self.lat <- l.lat, self.lng <- l.lng, self.id_proprio <- l.id_proprio)
         
         do {
             try self.database.run(insertLogement)
-            print("Logement inserted")
+            //print("Logement inserted")
         } catch {
             print(error)
         }
@@ -99,11 +99,11 @@ public class ModulePersistance {
 
     }
     func insertProprietaire (P: Proprietaire) {
-        print("Insérer un proprietaire :")
+        //print("Insérer un proprietaire :")
     let insertProprietaire = self.proprioTable.insert(self.id <- P.id_proprio, self.self.nom <- P.nom,  self.email <- P.email,  self.tel <- P.tel, self.pass <- P.pass)
         do {
             try self.database.run(insertProprietaire)
-            print("Proprietaire inserted")
+            //print("Proprietaire inserted")
         } catch {
             print(error)
         }
@@ -126,6 +126,31 @@ public class ModulePersistance {
             print(error)
         }
         return proprietaire
+    }
+    
+    func getProprietaire(email : String, pass : String) -> String{
+        
+        var id_proprio : String = "-1"
+        
+        do {
+            
+            let liste = try self.database.prepare(self.proprioTable)
+            
+            print(liste)
+            
+            for p in liste {
+                
+                print("\(p[self.email]) \(p[self.pass])")
+                
+                if(p[self.email] == email && p[self.pass] == pass) {
+                    id_proprio = p[self.id]
+                }
+            }
+            
+        } catch {
+            print(error)
+        }
+        return id_proprio
     }
     
     func updateProprietaire(proprietaire : Proprietaire) {

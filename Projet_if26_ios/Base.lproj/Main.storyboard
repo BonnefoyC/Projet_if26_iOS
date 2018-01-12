@@ -701,11 +701,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-Xu-IOX">
-                                <rect key="frame" x="137" y="392" width="47" height="30"/>
+                                <rect key="frame" x="139" y="392" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Valider"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="auth" id="J23-aC-AiD"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="auth" id="cdy-Us-uQT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -713,6 +713,10 @@
                         <viewLayoutGuide key="safeArea" id="Qyh-yk-emo"/>
                     </view>
                     <navigationItem key="navigationItem" id="qyW-VZ-bIJ"/>
+                    <connections>
+                        <outlet property="et_email" destination="ClG-tN-XFK" id="40x-cO-e9m"/>
+                        <outlet property="et_mdp" destination="G0d-b7-9lr" id="zS3-Ni-NjZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRr-cp-wq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

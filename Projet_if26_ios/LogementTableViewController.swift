@@ -18,7 +18,7 @@ class LogementTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         let logements : [Logement] = Logement.getinitiallogement()
         for logement in logements {
             mp.insertLogement(l: logement)
@@ -30,7 +30,7 @@ class LogementTableViewController: UITableViewController {
             mp.insertProprietaire(P: proprietaire)
         }
  
- 
+ */
         liste = mp.listLogement()
         for l in liste {
             print(l.affiche())
