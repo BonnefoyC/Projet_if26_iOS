@@ -86,6 +86,7 @@ class LogementTableViewController: UITableViewController {
             
             if let indexPath = self.tableView.indexPath(for: cell) {
                 viewController.logement = liste[indexPath.row]
+                viewController.id = indexPath.row + 1
             }
         }
     }

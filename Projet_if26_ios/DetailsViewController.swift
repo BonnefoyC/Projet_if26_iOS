@@ -10,6 +10,7 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var descriptionannonce: UITextView!
     @IBOutlet weak var nombredepiecesannonce: UILabel!
     @IBOutlet weak var adresseannonce: UILabel!
@@ -18,6 +19,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var labelannonce: UILabel!
     
     var logement : Logement?
+    var id : Int?
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,11 @@ class DetailsViewController: UIViewController {
         nombredepiecesannonce.text = "Nombre de pieces : \(logement!.nb_pieces)"
         descriptionannonce.text = "\(logement!.logement_description)"
         
+        let nom_image = "logement\(id!).jpg"
+        
+        let imageNamed : UIImage? = UIImage(named : nom_image)
+        
+        image.image = imageNamed
     }
 
     override func didReceiveMemoryWarning() {

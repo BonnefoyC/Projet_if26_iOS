@@ -195,6 +195,7 @@
                     <connections>
                         <outlet property="adresseannonce" destination="mpD-Sv-XLW" id="bwa-vW-jgw"/>
                         <outlet property="descriptionannonce" destination="obJ-I9-ibf" id="Ids-uz-eYV"/>
+                        <outlet property="image" destination="SSg-RS-B1I" id="go3-jR-Kqt"/>
                         <outlet property="labelannonce" destination="daO-Rb-CrE" id="wTf-Wy-Hh8"/>
                         <outlet property="nombredepiecesannonce" destination="ug2-Hv-EyP" id="Ylb-8D-9h0"/>
                         <outlet property="prixannonce" destination="OUu-Ae-bFv" id="Dw7-JW-daj"/>
@@ -517,6 +518,14 @@
                                     <action selector="modifierVotreCompte:" destination="2pq-bF-V8N" eventType="touchUpInside" id="dF8-Zo-hN9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txE-bL-JQw">
+                                <rect key="frame" x="106" y="371" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Retour au menu"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="yId-st-Eig"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="lwj-Yg-NGA"/>
@@ -804,4 +813,7 @@
             <point key="canvasLocation" x="-881.25" y="610.56338028169012"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="yId-st-Eig"/>
+    </inferredMetricsTieBreakers>
 </document>

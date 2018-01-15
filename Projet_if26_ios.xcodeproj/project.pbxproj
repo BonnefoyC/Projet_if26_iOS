@@ -30,6 +30,30 @@
 		88DB02481FDECC8C00BA4724 /* Proprietaire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB02471FDECC8C00BA4724 /* Proprietaire.swift */; };
 		88DB025B1FDED66100BA4724 /* ModulePersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB025A1FDED66100BA4724 /* ModulePersistance.swift */; };
 		88DB025D1FDEDB3600BA4724 /* DeposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DB025C1FDEDB3600BA4724 /* DeposerViewController.swift */; };
+		88EB0B95200CA25200924FEF /* logement14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B7D200CA25000924FEF /* logement14.jpg */; };
+		88EB0B96200CA25200924FEF /* logement6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B7E200CA25000924FEF /* logement6.jpg */; };
+		88EB0B97200CA25200924FEF /* logement23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B7F200CA25000924FEF /* logement23.jpg */; };
+		88EB0B98200CA25200924FEF /* logement15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B80200CA25000924FEF /* logement15.jpg */; };
+		88EB0B99200CA25200924FEF /* logement13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B81200CA25000924FEF /* logement13.jpg */; };
+		88EB0B9A200CA25200924FEF /* logement7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B82200CA25000924FEF /* logement7.jpg */; };
+		88EB0B9B200CA25200924FEF /* logement4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B83200CA25000924FEF /* logement4.jpg */; };
+		88EB0B9C200CA25200924FEF /* logement12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B84200CA25000924FEF /* logement12.jpg */; };
+		88EB0B9D200CA25200924FEF /* logement11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B85200CA25000924FEF /* logement11.jpg */; };
+		88EB0B9E200CA25200924FEF /* logement8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B86200CA25100924FEF /* logement8.jpg */; };
+		88EB0B9F200CA25200924FEF /* logement9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B87200CA25100924FEF /* logement9.jpg */; };
+		88EB0BA0200CA25200924FEF /* logement17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B88200CA25100924FEF /* logement17.jpg */; };
+		88EB0BA1200CA25200924FEF /* logement18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B89200CA25100924FEF /* logement18.jpg */; };
+		88EB0BA2200CA25200924FEF /* logement19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B8A200CA25100924FEF /* logement19.jpg */; };
+		88EB0BA3200CA25200924FEF /* logement1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B8B200CA25100924FEF /* logement1.jpg */; };
+		88EB0BA4200CA25200924FEF /* logement2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B8C200CA25100924FEF /* logement2.jpg */; };
+		88EB0BA5200CA25200924FEF /* logement3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B8D200CA25100924FEF /* logement3.jpg */; };
+		88EB0BA6200CA25200924FEF /* logement22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B8E200CA25100924FEF /* logement22.jpg */; };
+		88EB0BA7200CA25200924FEF /* p1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B8F200CA25100924FEF /* p1.jpg */; };
+		88EB0BA8200CA25200924FEF /* logement20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B90200CA25100924FEF /* logement20.jpg */; };
+		88EB0BA9200CA25200924FEF /* logement16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B91200CA25100924FEF /* logement16.jpg */; };
+		88EB0BAA200CA25200924FEF /* logement5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B92200CA25200924FEF /* logement5.jpg */; };
+		88EB0BAB200CA25200924FEF /* logement21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B93200CA25200924FEF /* logement21.jpg */; };
+		88EB0BAC200CA25200924FEF /* logement10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88EB0B94200CA25200924FEF /* logement10.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +172,30 @@
 		88DB02471FDECC8C00BA4724 /* Proprietaire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proprietaire.swift; sourceTree = "<group>"; };
 		88DB025A1FDED66100BA4724 /* ModulePersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulePersistance.swift; sourceTree = "<group>"; };
 		88DB025C1FDEDB3600BA4724 /* DeposerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeposerViewController.swift; sourceTree = "<group>"; };
+		88EB0B7D200CA25000924FEF /* logement14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement14.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement14.jpg; sourceTree = "<group>"; };
+		88EB0B7E200CA25000924FEF /* logement6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement6.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement6.jpg; sourceTree = "<group>"; };
+		88EB0B7F200CA25000924FEF /* logement23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement23.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement23.jpg; sourceTree = "<group>"; };
+		88EB0B80200CA25000924FEF /* logement15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement15.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement15.jpg; sourceTree = "<group>"; };
+		88EB0B81200CA25000924FEF /* logement13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement13.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement13.jpg; sourceTree = "<group>"; };
+		88EB0B82200CA25000924FEF /* logement7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement7.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement7.jpg; sourceTree = "<group>"; };
+		88EB0B83200CA25000924FEF /* logement4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement4.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement4.jpg; sourceTree = "<group>"; };
+		88EB0B84200CA25000924FEF /* logement12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement12.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement12.jpg; sourceTree = "<group>"; };
+		88EB0B85200CA25000924FEF /* logement11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement11.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement11.jpg; sourceTree = "<group>"; };
+		88EB0B86200CA25100924FEF /* logement8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement8.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement8.jpg; sourceTree = "<group>"; };
+		88EB0B87200CA25100924FEF /* logement9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement9.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement9.jpg; sourceTree = "<group>"; };
+		88EB0B88200CA25100924FEF /* logement17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement17.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement17.jpg; sourceTree = "<group>"; };
+		88EB0B89200CA25100924FEF /* logement18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement18.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement18.jpg; sourceTree = "<group>"; };
+		88EB0B8A200CA25100924FEF /* logement19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement19.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement19.jpg; sourceTree = "<group>"; };
+		88EB0B8B200CA25100924FEF /* logement1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement1.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement1.jpg; sourceTree = "<group>"; };
+		88EB0B8C200CA25100924FEF /* logement2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement2.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement2.jpg; sourceTree = "<group>"; };
+		88EB0B8D200CA25100924FEF /* logement3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement3.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement3.jpg; sourceTree = "<group>"; };
+		88EB0B8E200CA25100924FEF /* logement22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement22.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement22.jpg; sourceTree = "<group>"; };
+		88EB0B8F200CA25100924FEF /* p1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p1.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/p1.jpg; sourceTree = "<group>"; };
+		88EB0B90200CA25100924FEF /* logement20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement20.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement20.jpg; sourceTree = "<group>"; };
+		88EB0B91200CA25100924FEF /* logement16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement16.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement16.jpg; sourceTree = "<group>"; };
+		88EB0B92200CA25200924FEF /* logement5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement5.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement5.jpg; sourceTree = "<group>"; };
+		88EB0B93200CA25200924FEF /* logement21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement21.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement21.jpg; sourceTree = "<group>"; };
+		88EB0B94200CA25200924FEF /* logement10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logement10.jpg; path = ../../../Projet_if26_android/app/src/main/res/drawable/logement10.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +250,7 @@
 		881D41FA1FDA8E2400B9ECF9 /* Projet_if26_ios */ = {
 			isa = PBXGroup;
 			children = (
+				88EB0B7C200CA21100924FEF /* Images */,
 				881D422B1FDA9DAF00B9ECF9 /* LogementTableViewController.swift */,
 				8867941E1FE3E51F00C7EA88 /* ContactViewController.swift */,
 				881D41FB1FDA8E2400B9ECF9 /* AppDelegate.swift */,
@@ -263,6 +312,37 @@
 				8867941B1FE3D73800C7EA88 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88EB0B7C200CA21100924FEF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				88EB0B8B200CA25100924FEF /* logement1.jpg */,
+				88EB0B8C200CA25100924FEF /* logement2.jpg */,
+				88EB0B8D200CA25100924FEF /* logement3.jpg */,
+				88EB0B83200CA25000924FEF /* logement4.jpg */,
+				88EB0B92200CA25200924FEF /* logement5.jpg */,
+				88EB0B7E200CA25000924FEF /* logement6.jpg */,
+				88EB0B82200CA25000924FEF /* logement7.jpg */,
+				88EB0B86200CA25100924FEF /* logement8.jpg */,
+				88EB0B87200CA25100924FEF /* logement9.jpg */,
+				88EB0B94200CA25200924FEF /* logement10.jpg */,
+				88EB0B85200CA25000924FEF /* logement11.jpg */,
+				88EB0B84200CA25000924FEF /* logement12.jpg */,
+				88EB0B81200CA25000924FEF /* logement13.jpg */,
+				88EB0B7D200CA25000924FEF /* logement14.jpg */,
+				88EB0B80200CA25000924FEF /* logement15.jpg */,
+				88EB0B91200CA25100924FEF /* logement16.jpg */,
+				88EB0B88200CA25100924FEF /* logement17.jpg */,
+				88EB0B89200CA25100924FEF /* logement18.jpg */,
+				88EB0B8A200CA25100924FEF /* logement19.jpg */,
+				88EB0B90200CA25100924FEF /* logement20.jpg */,
+				88EB0B93200CA25200924FEF /* logement21.jpg */,
+				88EB0B8E200CA25100924FEF /* logement22.jpg */,
+				88EB0B7F200CA25000924FEF /* logement23.jpg */,
+				88EB0B8F200CA25100924FEF /* p1.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,9 +512,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EB0B9C200CA25200924FEF /* logement12.jpg in Resources */,
+				88EB0BA1200CA25200924FEF /* logement18.jpg in Resources */,
+				88EB0BA3200CA25200924FEF /* logement1.jpg in Resources */,
+				88EB0BA2200CA25200924FEF /* logement19.jpg in Resources */,
+				88EB0BA8200CA25200924FEF /* logement20.jpg in Resources */,
 				881D42061FDA8E2400B9ECF9 /* LaunchScreen.storyboard in Resources */,
+				88EB0BA6200CA25200924FEF /* logement22.jpg in Resources */,
+				88EB0B9D200CA25200924FEF /* logement11.jpg in Resources */,
+				88EB0B9E200CA25200924FEF /* logement8.jpg in Resources */,
+				88EB0B9B200CA25200924FEF /* logement4.jpg in Resources */,
+				88EB0BA0200CA25200924FEF /* logement17.jpg in Resources */,
+				88EB0B97200CA25200924FEF /* logement23.jpg in Resources */,
+				88EB0B9F200CA25200924FEF /* logement9.jpg in Resources */,
+				88EB0B9A200CA25200924FEF /* logement7.jpg in Resources */,
+				88EB0BA4200CA25200924FEF /* logement2.jpg in Resources */,
+				88EB0BAB200CA25200924FEF /* logement21.jpg in Resources */,
+				88EB0BA9200CA25200924FEF /* logement16.jpg in Resources */,
+				88EB0BA7200CA25200924FEF /* p1.jpg in Resources */,
+				88EB0BAC200CA25200924FEF /* logement10.jpg in Resources */,
+				88EB0B95200CA25200924FEF /* logement14.jpg in Resources */,
+				88EB0B96200CA25200924FEF /* logement6.jpg in Resources */,
+				88EB0B99200CA25200924FEF /* logement13.jpg in Resources */,
 				881D42031FDA8E2400B9ECF9 /* Assets.xcassets in Resources */,
 				881D42011FDA8E2400B9ECF9 /* Main.storyboard in Resources */,
+				88EB0BA5200CA25200924FEF /* logement3.jpg in Resources */,
+				88EB0B98200CA25200924FEF /* logement15.jpg in Resources */,
+				88EB0BAA200CA25200924FEF /* logement5.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
