@@ -38,25 +38,94 @@ class DeposerViewController: UIViewController {
         
         //Vérification
         
-        let location : CLLocation = getLatLng(ville: (ville_annonce.text)!, adresse: (adresse_annonce.text)!)
+        if (verification()) {
         
-        let prix:String = (prix_annonce.text)!
-        let nb_pieces: String = ( nb_pieces_annonce.text)!
-        let logement : Logement = Logement(label: (label_annonce.text)!, description: (description_annonce.text)!, prix:Int(prix)!, nb_pieces:Int(nb_pieces)!, ville: (ville_annonce.text)!, adresse: (adresse_annonce.text)!, lat: location.coordinate.latitude, lng: location.coordinate.longitude, id_proprio: Compte.getCompteCourant())
+            let location : CLLocation = getLatLng(ville: (ville_annonce.text)!, adresse: (adresse_annonce.text)!)
+            let prix:String = (prix_annonce.text)!
+            let nb_pieces: String = ( nb_pieces_annonce.text)!
+            let logement : Logement = Logement(label: (label_annonce.text)!, description: (description_annonce.text)!, prix:Int(prix)!, nb_pieces:Int(nb_pieces)!, ville: (ville_annonce.text)!, adresse: (adresse_annonce.text)!, lat: location.coordinate.latitude, lng: location.coordinate.longitude, id_proprio: Compte.getCompteCourant())
         
-        mp.insertLogement(l: logement)
+            mp.insertLogement(l: logement)
+            
+            let message = "Votre bien a été publié."
+            let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            self.present(alert, animated: true)
+            
+            // duration in seconds
+            let duration: Double = 5
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
+                alert.dismiss(animated: true)
+            }
+            
+            label_annonce.isEnabled = false
+            nb_pieces_annonce.isEnabled = false
+            adresse_annonce.isEnabled = false
+            ville_annonce.isEnabled = false
+            prix_annonce.isEnabled = false
+            description_annonce.isEditable = false
+            bt_valider.isEnabled = false
+            
+        } else {
+            let message = "Tous les champs sont obligatoires."
+            let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            self.present(alert, animated: true)
+            
+            // duration in seconds
+            let duration: Double = 5
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + duration) {
+                alert.dismiss(animated: true)
+            }
+        }
+    }
+    
+    func verification() -> Bool {
+        
+        var check : Bool = true
+        
+        if(label_annonce.text == "") {
+            check = false
+            label_annonce.backgroundColor = UIColor.red
+        } else {
+            label_annonce.backgroundColor = UIColor.white
+        }
+        if(nb_pieces_annonce.text == "") {
+            check = false
+            nb_pieces_annonce.backgroundColor = UIColor.red
+        }else {
+            nb_pieces_annonce.backgroundColor = UIColor.white
+        }
+        if(adresse_annonce.text == "") {
+            check = false
+            adresse_annonce.backgroundColor = UIColor.red
+        }else {
+            adresse_annonce.backgroundColor = UIColor.white
+        }
+        
+        if(ville_annonce.text == "") {
+            check = false
+            ville_annonce.backgroundColor = UIColor.red
+        }else {
+            ville_annonce.backgroundColor = UIColor.white
+        }
+        if(prix_annonce.text == "") {
+            check = false
+            prix_annonce.backgroundColor = UIColor.red
+        }else {
+            prix_annonce.backgroundColor = UIColor.white
+        }
+        if(description_annonce.text == "") {
+            check = false
+            description_annonce.backgroundColor = UIColor.red
+        }else {
+            description_annonce.backgroundColor = UIColor.white
+        }
+        
+        return check
     }
     
     private func getLatLng(ville : String, adresse : String) -> CLLocation{
-        
-        
-        
-        
-        
-        
-        
-        
-        
         var coords = [
             ["lat" : 48.281573, "lng" : 4.070907],
             ["lat" : 48.281202, "lng" : 4.070343],
